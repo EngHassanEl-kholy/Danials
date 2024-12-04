@@ -1,0 +1,499 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    color: #343434;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+ 
+}
+.nav-ul
+{
+    list-style-type: none;
+    display: flex;
+    transition:  1s ease;
+}
+.nav-ul a , nav a
+{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 1s ease;
+   
+}
+.nav-ul a 
+{
+    padding: 15px;
+    
+}
+.nav-ul a:hover
+{
+    border-bottom: 1px aliceblue dotted;
+
+
+}
+header
+{
+    height:100vh;
+    
+    background-image: url(../img/bg.jpg);
+    background-size:cover;
+    background-position: center top;
+   
+}
+
+.layer
+{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-content
+{
+   text-align: center;
+   color: aliceblue;
+   padding: 15px;
+}
+.header-content i
+{
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px;
+}
+.header-content h5
+{
+    font-weight: 900;
+    font-size: 50px;
+}
+.header-content h1
+{
+    font-weight: 700;
+    padding: 10px;
+}
+.header-content h1::after
+{
+    content: "|";
+    animation-duration: 2s;
+    animation-name: name;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes name
+{
+    0%
+    {
+        content: "S|";
+    }
+    10%
+    {
+        content: "SOF|";
+    }
+    20%
+    {
+        content: "SOFT|";
+    }
+    30%
+    {
+        content: "SOFTW|";
+    }
+    40%
+    {
+        content: "SOFTWARE|";
+    }
+    50%
+    {
+        content: "SOFTWARE E|";
+    }
+    60%
+    {
+        content: "SOFTWARE EN|";
+    }
+    70%
+    {
+        content: "SOFTWARE ENG|";
+    }
+    80%
+    {
+        content: "SOFTWARE ENGIN|";
+    }
+    90%
+    {
+        content: "SOFTWARE ENGINEE|";
+    }
+    100%
+    {
+        content: "SOFTWARE ENGINEER|";
+    }
+}
+.about-img
+{
+  
+   text-align:center;
+   margin-top: 3rem
+   
+}
+
+.about h3
+{
+    font-weight: 800;
+   font-size:1.875rem;
+   margin-top: 3rem
+}
+.about-img img
+{
+ width: 75%;
+}
+
+
+.about
+{
+    padding:30px;
+}
+.about-btn
+{
+    padding:5px 25px;
+    border-radius: 6px;
+    background-color: black;
+    color:white;
+    border: none;
+}
+.about .btn:hover
+{
+    background-color:transparent;
+    color: #1a1919;
+    border:2px #1a1919 round;
+
+}
+.services
+{
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #343434;
+}
+.services h2
+{
+    
+    font-weight: 900;
+    font-size: 50px;
+   
+   
+}
+.item-con
+{
+   
+    background-color: white;
+    margin: 30px 20px;
+    padding: 30px;
+   
+   
+
+}
+
+.item-con i
+{
+    padding:20px;
+    font-size:30px;
+    transition: 1s;
+    border-radius: 50%;
+    
+}
+.item-con:hover i
+{
+    background-color:#343434;
+    color: #f8f9fa;
+    
+}
+.test-slider
+{
+    background-color: brown;
+    text-align: center;
+    
+}
+.test-slider img
+{
+    border-radius:50%;
+}
+.portfolio-item
+{
+
+    position: relative;
+   
+}
+.portfolio-layer
+{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    left:5px;
+    bottom: 5px;
+    transition: 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255,255,255,0.9);
+   opacity: 0;
+    transform: translateY(15px);
+
+}
+#portfolio
+{
+    background-color: #ffffff;
+}
+#portfolio ul button
+{
+    
+    color: #1a1919;
+    font-weight: 700;
+   
+}
+#portfolio ul
+{
+   
+    display: flex;
+    justify-content: center;
+   
+}
+.portfolio-item:hover .portfolio-layer
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.portfolio-layer h6
+{
+ 
+  transform: translateY(-100%);
+  transition: 0.6s ease;
+}
+.portfolio-item:hover .portfolio-layer h6
+{
+    transform: translateY(0);
+}
+.portfolio-icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+   transform: translateY(100%);
+
+   
+}
+.portfolio-item:hover .portfolio-icons
+{
+    transform: translateY(0);
+}
+.portfolio-icon
+{
+    
+    margin: 3px;
+    border-radius: 50%;
+}
+.portfolio-icons i
+{
+    border-radius: 50%;
+    background-color:black;
+   color: #ffffff;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid transparent;
+    
+}
+.portfolio-icons i:hover
+{
+ background-color: #ffffff;
+ color: black;
+ border: 1px solid black;
+}
+.clients
+{
+    text-align: center;
+    padding:30px;
+    margin: 30px;
+}
+.clients .item
+{
+   
+    padding: 30px;
+    
+}
+.clients .item i
+{
+   font-size: 25px;
+   padding: 20px;
+}
+.clients .item h3
+{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.team-item
+{
+    background-color: #343434;
+    text-align: center;
+   border-radius: 6px;
+    color: #f8f9fa;
+    overflow: hidden;
+   
+    
+}
+.team-item h4
+{
+    padding: 5px;
+}
+.team-item h5
+{
+padding-bottom: 20px;
+}
+
+.team
+{
+    background-color: #f8f9fa;
+    padding: 30px;
+}
+.team .img-team
+{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}  
+
+.team-layer
+{
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background-color: rgb(240, 236, 236);
+    opacity:0;
+    transform: rotateY(180deg) scale(0.5,0.5);
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-team img
+{
+    transition: all 0.8s ease;
+}
+.team-item:hover .team-layer
+{
+ opacity: 0.8;
+ transform: scale(1,1);
+}
+.team-item:hover .img-team img
+{
+ transform: scale(1.1);
+}
+.team-layer i
+{
+  color: #1a1919;
+  font-size: 22px;
+  padding: 10px;
+}
+h2
+{
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 40px;
+    font-weight: 900;
+}
+footer
+{
+    background-color: #1c1c1c;
+    color: #527682;
+    padding: 20px;
+    text-align: center;
+    font-size: .8125rem;
+    word-spacing: .125rem;
+    
+}
+.contact
+{
+    
+    padding: 40px;
+}
+.contact-item
+{
+    padding: 20px;
+    text-align: center;
+ 
+}
+.contact-item i
+{
+    padding: 20px;
+    font-size: 30px;
+}
+.contact button
+{
+   margin-left: 20px;
+   padding:5px 30px;
+   transition: 0.5s ease;
+}
+.contact button:hover
+{
+background-color: transparent;
+color: #1a1919;
+border:1px #1a1919 round;
+}
+.client-test img
+{
+    border-radius: 50%;
+    
+}
+.client-test
+{
+    
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+}
+.carousel-indicators [data-bs-target]
+{
+    width:50px;
+    height: 50px;
+    text-indent: 0;
+}
+#testimonials
+{
+    background-color: #f8f9fa;
+    padding: 40px;
+}
+@media (max-width: 768px) {
+    
+  
+    .nav-ul {
+      
+      display: none; /* إخفاء القائمة افتراضيًا على الشاشات الصغيرة */
+      
+    }
+  
+    
+  
+    
+  }
+  
+  
+
+
